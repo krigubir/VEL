@@ -1,3 +1,5 @@
+import type { Club } from "@/app/lib/definitions"
+
 export function getMunicipalities(county: string | undefined): string[] {
   if (county === "agder") {
     return [
@@ -377,4 +379,44 @@ export function getMunicipalities(county: string | undefined): string[] {
     ]
   }
   return []
+}
+
+export function getExampleClubData(): Club[] {
+  return [
+    {
+      id: "1",
+      name: "Klubb 1",
+      description: "Dette er en klubb",
+      location: "Oslo",
+      image: "klubb1.jpeg",
+    },
+    {
+      id: "2",
+      name: "Klubb 2",
+      description: "Dette er en klubb",
+      location: "Bergen",
+      image: "klubb2.jpeg",
+    },
+    {
+      id: "3",
+      name: "Klubb 3",
+      description: "Dette er en klubb",
+      location: "Trondheim",
+      image: "klubb3.jpeg",
+    },
+    {
+      id: "4",
+      name: "Klubb 4",
+      description: "Dette er en klubb",
+      location: "Stavanger",
+      image: "klubb4.jpeg",
+    },
+    {
+      id: "5",
+      name: "Klubb 5",
+      description: "Dette er en klubb",
+      location: "Kristiansand",
+      image: "klubb5.jpeg",
+    },
+  ]
 }

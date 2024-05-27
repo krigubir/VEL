@@ -1,11 +1,7 @@
 "use client"
 
 import { getMunicipalities } from "@/app/lib/data"
-import {
-  Checkbox,
-  CheckboxGroup,
-  NativeSelect,
-} from "@digdir/designsystemet-react"
+import { Checkbox, NativeSelect } from "@digdir/designsystemet-react"
 import { useState } from "react"
 
 export default function SearchFilter() {
